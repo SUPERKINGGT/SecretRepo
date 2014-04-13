@@ -1,0 +1,22 @@
+﻿<Window x:Class="GettingStarted.RegionVu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:k="http://schemas.microsoft.com/kinect/2013"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="RegionVu" Height="1080" Width="1920">
+    <Grid>
+        <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
+        <Image x:Name="RegionBackground" HorizontalAlignment="Left" Height="1080" Margin="0,0,0,0" VerticalAlignment="Top" Width="1920" Source="artAssets/WestCoast.png"/>
+        <k:KinectUserViewer VerticalAlignment="Top" HorizontalAlignment="Center" k:KinectRegion.KinectRegion="{Binding ElementName=kinectRegion}" Height="100" UserColoringMode="Manual" />
+        <k:KinectRegion Name="kinectRegion" Margin="50,-34,-50,34">
+            <Grid>
+                <k:KinectTileButton Label="Press me!" Click="ButtonOnClick" VerticalAlignment="Top" Margin="15,35,0,0" HorizontalAlignment="Left" Height="203" Width="247"></k:KinectTileButton>
+                <k:KinectCircleButton Label="Circle" HorizontalAlignment="Right" Height="200" VerticalAlignment="Center" Click="ButtonOnClick" Content="#" Foreground="#FF910000" FontFamily="Futura LT" FontSize="0.01" />
+                <k:KinectScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" VerticalAlignment="Bottom">
+                    <StackPanel Orientation="Horizontal" Name="scrollContent" />
+                </k:KinectScrollViewer>
+            </Grid>
+        </k:KinectRegion>
+     </Grid>
+</Window>
