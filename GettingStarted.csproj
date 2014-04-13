@@ -72,6 +72,12 @@
     <Compile Include="RegionVu.xaml.cs">
       <DependentUpon>RegionVu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StateVu.xaml.cs">
+      <DependentUpon>StateVu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="statistics.xaml.cs">
+      <DependentUpon>statistics.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -85,6 +91,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="RegionVu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StateVu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="statistics.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,6 +152,69 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="artAssets\stats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\HomeButton.png" />
+    <Resource Include="artAssets\USA Total.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\TotalUSAStats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\arizonaButton.png" />
+    <Resource Include="artAssets\CaliforniaButton.png" />
+    <Resource Include="artAssets\colorodoButton.png" />
+    <Resource Include="artAssets\IdahoButton.png" />
+    <Resource Include="artAssets\MontanaButton.png" />
+    <Resource Include="artAssets\Nevada.png" />
+    <Resource Include="artAssets\newMexicoButton.png" />
+    <Resource Include="artAssets\OregonButton.png" />
+    <Resource Include="artAssets\UtahButton.png" />
+    <Resource Include="artAssets\WashingtonButton.png" />
+    <Resource Include="artAssets\wyomingButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\AlabamaButton.png" />
+    <Resource Include="artAssets\AlaskaStateButton.png" />
+    <Resource Include="artAssets\ArkansasButton.png" />
+    <Resource Include="artAssets\CleanPlate.png" />
+    <Resource Include="artAssets\ConnecticutButton.png" />
+    <Resource Include="artAssets\DelawareButton.png" />
+    <Resource Include="artAssets\FloridaButton.png" />
+    <Resource Include="artAssets\GeorgiaButton.png" />
+    <Resource Include="artAssets\HawaiiButton.png" />
+    <Resource Include="artAssets\IllinoisButton.png" />
+    <Resource Include="artAssets\IndianaButton.png" />
+    <Resource Include="artAssets\IowaButton.png" />
+    <Resource Include="artAssets\KansasButton.png" />
+    <Resource Include="artAssets\kentuckyButton.png" />
+    <Resource Include="artAssets\LouisianaButton.png" />
+    <Resource Include="artAssets\mainButton.png" />
+    <Resource Include="artAssets\MarylandButton.png" />
+    <Resource Include="artAssets\massachusettsButton.png" />
+    <Resource Include="artAssets\MichiganButton.png" />
+    <Resource Include="artAssets\MInnesotaButton.png" />
+    <Resource Include="artAssets\MississippiButton.png" />
+    <Resource Include="artAssets\MissouriButton.png" />
+    <Resource Include="artAssets\NebraskaButton.png" />
+    <Resource Include="artAssets\newHampshireButton.png" />
+    <Resource Include="artAssets\newJerseyButton.png" />
+    <Resource Include="artAssets\newYorkButton.png" />
+    <Resource Include="artAssets\northCarolina.png" />
+    <Resource Include="artAssets\NorthDakotaButton.png" />
+    <Resource Include="artAssets\OhioButton.png" />
+    <Resource Include="artAssets\oklahomaButton.png" />
+    <Resource Include="artAssets\pennsylvaniaButton.png" />
+    <Resource Include="artAssets\rhodeIsland.png" />
+    <Resource Include="artAssets\southCarolinaButton.png" />
+    <Resource Include="artAssets\SouthDakotaButton.png" />
+    <Resource Include="artAssets\tennesseeButton.png" />
+    <Resource Include="artAssets\texasButton.png" />
+    <Resource Include="artAssets\Untitled-1.png" />
+    <Resource Include="artAssets\vermontButton.png" />
+    <Resource Include="artAssets\VirginiaButton.png" />
+    <Resource Include="artAssets\westVirginaButton.png" />
+    <Resource Include="artAssets\WisconsinButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

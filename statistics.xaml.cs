@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Windows.Navigation;
 using Microsoft.Kinect;
 using Microsoft.Kinect.Toolkit;
 using Microsoft.Kinect.Toolkit.Controls;
@@ -19,17 +18,14 @@ using Microsoft.Kinect.Toolkit.Controls;
 namespace GettingStarted
 {
     /// <summary>
-    /// Interaction logic for RegionVu.xaml
+    /// Interaction logic for statistics.xaml
     /// </summary>
-    public partial class RegionVu : Window
+    public partial class statistics : Window
     {
         private KinectSensorChooser sensorChooser;
-        public int numberOfStates = 2;
-        public string filename = "artAssets/EastCoast.png";
-        public string[] StateNames = new string[16];
-        public string[] StateFileNames = new string[16];
-        ImageBrush temp;
-        public RegionVu()
+        public string filename = "artAssets/TotalUSAStats.png";
+
+        public statistics()
         {
             InitializeComponent();
             Loaded += OnLoaded;
@@ -44,31 +40,6 @@ namespace GettingStarted
 
             this.RegionBackground.Source = new BitmapImage(new Uri(filename, UriKind.RelativeOrAbsolute));
 
-            //fill scroll content
-            for (int i = 0; i < numberOfStates; i++)
-            {
-                //temp = new ImageBrush(new BitmapImage(new Uri(filename, UriKind.Relative)));
-
-                var button = new KinectCircleButton
-                {
-                    //Background = temp,
-                    Content = StateNames[i],
-                    Height = 200
-                };
-                
-                int i1 = i;
-                button.Click +=
-                    (o, args) =>
-                    {
-                        this.sensorChooser.Stop();
-                        StateVu State = new StateVu();
-                        State.StateName = StateFileNames[i];
-                        State.ShowDialog();
-                        this.Close();
-                    };// MessageBox.Show(StateNames[i] + i1);
-
-                scrollContent.Children.Add(button);
-            }
         }
 
         private void SensorChooserOnKinectChanged(object sender, KinectChangedEventArgs args)
@@ -130,14 +101,5 @@ namespace GettingStarted
             home.Show();
             this.Close();
         }
-        private void StatsOnClick(object sender, RoutedEventArgs e)
-        {
-            this.sensorChooser.Stop();
-            statistics StatScreen = new statistics();
-            StatScreen.filename = "artAssets/TotalUSAStats.png";
-            StatScreen.ShowDialog();
-            this.Close();
-        }
+     }
     }
-    }
-
