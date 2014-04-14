@@ -76,6 +76,11 @@ namespace GettingStarted
                         StateVu State = new StateVu();
                         State.StateName = StateFileNames[i1];
                         State.ChartName = chartName;
+                        State.whichRegion = filename;
+                        State.prevRegionStats = StatName;
+                        State.prevNumofStates = numberOfStates;
+                        State.prevStateFileNames = StateFileNames;
+                        State.prevStateNames = StateNames;
                         State.ShowDialog();
                         this.Close();
                     };// MessageBox.Show(StateNames[i] + i1);

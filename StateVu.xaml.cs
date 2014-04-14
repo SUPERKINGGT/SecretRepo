@@ -25,6 +25,12 @@ namespace GettingStarted
         private KinectSensorChooser sensorChooser;
         public string StateName = "";
         public string ChartName = "";
+        public string whichRegion = "";
+        public string prevRegionStats = "";
+        public int prevNumofStates = 0;
+        public string[] prevStateNames = new string[16];
+        public string[] prevStateFileNames = new string[16];
+
         public StateVu()
         {
             InitializeComponent();
@@ -104,6 +110,19 @@ namespace GettingStarted
             this.sensorChooser.Stop();
             USAVu home = new USAVu();
             home.Show();
+            this.Close();
+        }
+        private void BackOnClick(object sender, RoutedEventArgs e) 
+        {
+            //eventually go back to one of the region screens
+            this.sensorChooser.Stop();
+            RegionVu parentRegion = new RegionVu();
+            parentRegion.filename = whichRegion;
+            parentRegion.StatName = prevRegionStats;
+            parentRegion.numberOfStates = prevNumofStates;
+            parentRegion.StateNames = prevStateNames;
+            parentRegion.StateFileNames = prevStateFileNames;
+            parentRegion.Show();
             this.Close();
         }
     }
