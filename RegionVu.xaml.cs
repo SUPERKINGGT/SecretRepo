@@ -28,6 +28,8 @@ namespace GettingStarted
         public string filename = "artAssets/EastCoast.png";
         public string[] StateNames = new string[16];
         public string[] StateFileNames = new string[16];
+        public string StatName = "artAssets/TotalUSAStats.png";
+
         ImageBrush temp;
         public RegionVu()
         {
@@ -52,17 +54,28 @@ namespace GettingStarted
                 var button = new KinectCircleButton
                 {
                     //Background = temp,
+                    
                     Content = StateNames[i],
-                    Height = 200
+                    Foreground = System.Windows.Media.Brushes.LightSkyBlue,
+                    //BorderBrush = System.Windows.Media.Brushes.Black,
+                    Height = 300
                 };
-                
+
+                string chartName = "";
+                if (StateNames[i] == "NY") { chartName = "artAssets/NewYorkChart.png"; }
+                else if (StateNames[i] == "HI") { chartName = "artAssets/HawaiiChart.png"; }
+                else if (StateNames[i] == "WA") { chartName = "artAssets/WashingtonChart.png";  }
+                else if (StateNames[i] == "FL") { chartName = "artAssets/Florida.png"; }
+                else if (StateNames[i] == "IL") { chartName = "artAssets/IllinoisChart.png"; }
+                else { chartName = "artAssets/temp.png"; }
                 int i1 = i;
                 button.Click +=
                     (o, args) =>
                     {
                         this.sensorChooser.Stop();
                         StateVu State = new StateVu();
-                        State.StateName = StateFileNames[i];
+                        State.StateName = StateFileNames[i1];
+                        State.ChartName = chartName;
                         State.ShowDialog();
                         this.Close();
                     };// MessageBox.Show(StateNames[i] + i1);
@@ -126,7 +139,7 @@ namespace GettingStarted
         private void HomeOnClick(object sender, RoutedEventArgs e)
         {
             this.sensorChooser.Stop();
-            MainWindow home = new MainWindow();
+            USAVu home = new USAVu();
             home.Show();
             this.Close();
         }
@@ -134,7 +147,7 @@ namespace GettingStarted
         {
             this.sensorChooser.Stop();
             statistics StatScreen = new statistics();
-            StatScreen.filename = "artAssets/TotalUSAStats.png";
+            StatScreen.filename = StatName;
             StatScreen.ShowDialog();
             this.Close();
         }

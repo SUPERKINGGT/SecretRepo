@@ -7,38 +7,13 @@
 
     <Grid>
         <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
-        <Image x:Name="background_Map" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Source="artAssets/background_map.png" Stretch="Fill"/>
+        <Image x:Name="background_Map" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Source="artAssets/TitleScreen.png" Stretch="Fill"/>
         <k:KinectUserViewer VerticalAlignment="Top" HorizontalAlignment="Center" k:KinectRegion.KinectRegion="{Binding ElementName=kinectRegion}" Height="100" UserColoringMode="Manual" />
         <k:KinectRegion Name="kinectRegion" Margin="50,-34,-50,34">
             <Grid Margin="-2,0,2,0">
-                <k:KinectTileButton Click="southOnClick" VerticalAlignment="Top" Margin="512,434,368,-29" HorizontalAlignment="Center" Height="644" Width="1032" BorderThickness="0">
+                <k:KinectTileButton Click="TitleOnClick" VerticalAlignment="Center" Margin="0,0,0,0" HorizontalAlignment="Center" Height="1080" Width="1920" BorderThickness="0">
                     <k:KinectTileButton.Background>
-                        <ImageBrush ImageSource="artAssets/southButton.png"/>
-                    </k:KinectTileButton.Background>
-                </k:KinectTileButton>
-                <k:KinectTileButton Click="EastOnClick" VerticalAlignment="Top" Margin="1306,81,200,0" HorizontalAlignment="Center" Height="415" Width="406" BorderThickness="0">
-                    <k:KinectTileButton.Background>
-                        <ImageBrush ImageSource="artAssets/EastCoastButton.png"/>
-                    </k:KinectTileButton.Background>
-                </k:KinectTileButton>
-                <k:KinectTileButton Click="AlaskaOnClick" VerticalAlignment="Top" Margin="54,788,1239,-63" HorizontalAlignment="Center" Height="324" Width="619" BorderThickness="0">
-                    <k:KinectTileButton.Background>
-                        <ImageBrush ImageSource="artAssets/AlaskaButton.png"/>
-                    </k:KinectTileButton.Background>
-                </k:KinectTileButton>
-                <k:KinectTileButton Click="StatsOnClick" VerticalAlignment="Center" Margin="0,423,58,396" HorizontalAlignment="Right" Height="230" Width="83" BorderThickness="0">
-                    <k:KinectTileButton.Background>
-                        <ImageBrush ImageSource="artAssets/stats.png"/>
-                    </k:KinectTileButton.Background>
-                </k:KinectTileButton>
-                <k:KinectTileButton Click="WestOnClick" VerticalAlignment="Top" Margin="10,10,0,0" HorizontalAlignment="Left" Height="838" Width="718" BorderThickness="0">
-                    <k:KinectTileButton.Background>
-                        <ImageBrush ImageSource="artAssets/westButton.png"/>
-                    </k:KinectTileButton.Background>
-                </k:KinectTileButton>
-                <k:KinectTileButton Click="MidWestOnClick" VerticalAlignment="Top" Margin="626,106,546,0" HorizontalAlignment="Center" Height="563" Width="740" BorderThickness="0">
-                    <k:KinectTileButton.Background>
-                        <ImageBrush ImageSource="artAssets/midWestButton.png"/>
+                        <ImageBrush ImageSource="artAssets/TitleScreen.png"/>
                     </k:KinectTileButton.Background>
                 </k:KinectTileButton>
             </Grid>

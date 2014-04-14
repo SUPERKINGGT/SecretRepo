@@ -24,6 +24,7 @@ namespace GettingStarted
     {
         private KinectSensorChooser sensorChooser;
         public string StateName = "";
+        public string ChartName = "";
         public StateVu()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace GettingStarted
 
             //this.StateImage.Source = new BitmapImage(new Uri(StateName, UriKind.RelativeOrAbsolute));
             this.StateImage.Source = new BitmapImage(new Uri(StateName, UriKind.RelativeOrAbsolute));
+            this.ChartImage.Source = new BitmapImage(new Uri(ChartName, UriKind.RelativeOrAbsolute));
 
 
         }
@@ -100,7 +102,7 @@ namespace GettingStarted
         private void HomeOnClick(object sender, RoutedEventArgs e)
         {
             this.sensorChooser.Stop();
-            MainWindow home = new MainWindow();
+            USAVu home = new USAVu();
             home.Show();
             this.Close();
         }

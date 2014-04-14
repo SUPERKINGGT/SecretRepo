@@ -97,7 +97,7 @@ namespace GettingStarted
         private void HomeOnClick(object sender, RoutedEventArgs e)
         {
             this.sensorChooser.Stop();
-            MainWindow home = new MainWindow();
+            USAVu home = new USAVu();
             home.Show();
             this.Close();
         }

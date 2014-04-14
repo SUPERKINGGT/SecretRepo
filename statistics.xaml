@@ -15,7 +15,7 @@
             <Grid>
                 <k:KinectTileButton Click="HomeOnClick" VerticalAlignment="Top" Margin="10,47,0,0" HorizontalAlignment="Left" Height="149" Width="163" BorderThickness="0">
                     <k:KinectTileButton.Background>
-                        <ImageBrush ImageSource="artAssets/HomeButton.png"/>
+                        <ImageBrush ImageSource="artAssets/HomeButtonMod.png"/>
                     </k:KinectTileButton.Background>
                 </k:KinectTileButton>
             </Grid>

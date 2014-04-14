@@ -78,6 +78,9 @@
     <Compile Include="statistics.xaml.cs">
       <DependentUpon>statistics.xaml</DependentUpon>
     </Compile>
+    <Compile Include="USAVu.xaml.cs">
+      <DependentUpon>USAVu.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -99,6 +102,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="statistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USAVu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,6 +222,36 @@
     <Resource Include="artAssets\VirginiaButton.png" />
     <Resource Include="artAssets\westVirginaButton.png" />
     <Resource Include="artAssets\WisconsinButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\DirtySouthStats.png" />
+    <Resource Include="artAssets\MidWestStats.png" />
+    <Resource Include="artAssets\NorthEastStats.png" />
+    <Resource Include="artAssets\westCoastStats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\pacificStats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TitleScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\TitleScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\Florida.png" />
+    <Resource Include="artAssets\HawaiiChart.png" />
+    <Resource Include="artAssets\NewYorkChart.png" />
+    <Resource Include="artAssets\WashingtonChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\temp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\IllinoisChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\HomeButtonMod.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
