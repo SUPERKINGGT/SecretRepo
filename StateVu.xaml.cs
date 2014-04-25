@@ -27,6 +27,7 @@ namespace GettingStarted
         public string ChartName = "";
         public string whichRegion = "";
         public string prevRegionStats = "";
+        public string backButtonString = "";
         public int prevNumofStates = 0;
         public string[] prevStateNames = new string[16];
         public string[] prevStateFileNames = new string[16];
@@ -48,6 +49,9 @@ namespace GettingStarted
             //this.StateImage.Source = new BitmapImage(new Uri(StateName, UriKind.RelativeOrAbsolute));
             this.StateImage.Source = new BitmapImage(new Uri(StateName, UriKind.RelativeOrAbsolute));
             this.ChartImage.Source = new BitmapImage(new Uri(ChartName, UriKind.RelativeOrAbsolute));
+            ImageBrush mybrush = new ImageBrush();
+            mybrush.ImageSource = new BitmapImage(new Uri(backButtonString, UriKind.Relative));
+            this.BackButton.Background = mybrush;
 
 
         }
@@ -122,6 +126,7 @@ namespace GettingStarted
             parentRegion.numberOfStates = prevNumofStates;
             parentRegion.StateNames = prevStateNames;
             parentRegion.StateFileNames = prevStateFileNames;
+            parentRegion.superbackbuttonstring = backButtonString;
             parentRegion.Show();
             this.Close();
         }

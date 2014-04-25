@@ -29,8 +29,10 @@ namespace GettingStarted
         public string[] StateNames = new string[16];
         public string[] StateFileNames = new string[16];
         public string StatName = "artAssets/TotalUSAStats.png";
+        public string superbackbuttonstring = "";
+        public SolidColorBrush regionColor;
 
-        ImageBrush temp;
+        //public ImageBrush temp;
         public RegionVu()
         {
             InitializeComponent();
@@ -45,20 +47,26 @@ namespace GettingStarted
             this.sensorChooser.Start();
 
             this.RegionBackground.Source = new BitmapImage(new Uri(filename, UriKind.RelativeOrAbsolute));
+            ImageBrush temp = new ImageBrush();
+
+            int j = 0;
 
             //fill scroll content
             for (int i = 0; i < numberOfStates; i++)
             {
-                //temp = new ImageBrush(new BitmapImage(new Uri(filename, UriKind.Relative)));
+                temp = new ImageBrush(new BitmapImage(new Uri(StateFileNames[j], UriKind.RelativeOrAbsolute)));
 
-                var button = new KinectCircleButton
+                var button = new KinectTileButton
                 {
-                    //Background = temp,
-                    
-                    Content = StateNames[i],
-                    Foreground = System.Windows.Media.Brushes.LightSkyBlue,
+                    //Background = System.Windows.Media.Brushes.Gold,
+                    Background = temp,
+                    Label = StateNames[i],
+                    BorderThickness = new Thickness(0.1),
+                    Margin = new Thickness(0.1),
+                    //Foreground = regionColor,
                     //BorderBrush = System.Windows.Media.Brushes.Black,
-                    Height = 300
+                    Width = 250,
+                    Height = 250
                 };
 
                 string chartName = "";
@@ -81,11 +89,13 @@ namespace GettingStarted
                         State.prevNumofStates = numberOfStates;
                         State.prevStateFileNames = StateFileNames;
                         State.prevStateNames = StateNames;
+                        State.backButtonString = superbackbuttonstring;
                         State.ShowDialog();
                         this.Close();
                     };// MessageBox.Show(StateNames[i] + i1);
 
                 scrollContent.Children.Add(button);
+                j++;
             }
         }
 

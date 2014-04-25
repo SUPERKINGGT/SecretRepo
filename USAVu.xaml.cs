@@ -105,7 +105,7 @@ namespace GettingStarted
             reg.StateNames[2] = "CA"; reg.StateFileNames[2] = "artAssets/CaliforniaButton.png";
             reg.StateNames[3] = "NV"; reg.StateFileNames[3] = "artAssets/Nevada.png";
             reg.StateNames[4] = "AZ"; reg.StateFileNames[4] = "artAssets/arizonaButton.png";
-            reg.StateNames[5] = "NM"; reg.StateFileNames[5] = "artAssets/newMexico.png";
+            reg.StateNames[5] = "NM"; reg.StateFileNames[5] = "artAssets/newMexicoButton.png";
             reg.StateNames[6] = "UT"; reg.StateFileNames[6] = "artAssets/UtahButton.png";
             reg.StateNames[7] = "CO"; reg.StateFileNames[7] = "artAssets/colorodoButton.png";
             reg.StateNames[8] = "ID"; reg.StateFileNames[8] = "artAssets/IdahoButton.png";
@@ -114,6 +114,8 @@ namespace GettingStarted
 
             reg.filename = "artAssets/WestCoast.png";
             reg.StatName = "artAssets/WestCoastStats.png";
+            reg.superbackbuttonstring = "artAssets/WestButton.png";
+            reg.regionColor = System.Windows.Media.Brushes.Orange;
 
             reg.ShowDialog();
             this.Close();
@@ -140,6 +142,8 @@ namespace GettingStarted
 
             reg.filename = "artAssets/midwest.png";
             reg.StatName = "artAssets/MidWestStats.png";
+            reg.superbackbuttonstring = "artAssets/midWestButton.png";
+            reg.regionColor = System.Windows.Media.Brushes.Gold;
 
             reg.ShowDialog();
             this.Close();
@@ -155,13 +159,15 @@ namespace GettingStarted
             reg.StateNames[2] = "NH"; reg.StateFileNames[2] = "artAssets/newHampshireButton.png";
             reg.StateNames[3] = "MA"; reg.StateFileNames[3] = "artAssets/massachusettsButton.png";
             reg.StateNames[4] = "NY"; reg.StateFileNames[4] = "artAssets/newYorkButton.png";
-            reg.StateNames[5] = "RI"; reg.StateFileNames[5] = "artAssets/rhodeIslandButton.png";
+            reg.StateNames[5] = "RI"; reg.StateFileNames[5] = "artAssets/rhodeIsland.png";
             reg.StateNames[6] = "PA"; reg.StateFileNames[6] = "artAssets/pennsylvaniaButton.png";
             reg.StateNames[7] = "NJ"; reg.StateFileNames[7] = "artAssets/newJerseyButton.png";
             reg.StateNames[8] = "CT"; reg.StateFileNames[8] = "artAssets/ConnecticutButton.png";
 
             reg.filename = "artAssets/EastCoast.png";
             reg.StatName = "artAssets/NorthEastStats.png";
+            reg.superbackbuttonstring = "artAssets/EastCoastButton.png";
+            reg.regionColor = System.Windows.Media.Brushes.Indigo;
 
             reg.ShowDialog();
             this.Close();
@@ -174,9 +180,9 @@ namespace GettingStarted
             reg.numberOfStates = 16;
             reg.StateNames[0] = "DE"; reg.StateFileNames[0] = "artAssets/DelawareButton.png";
             reg.StateNames[1] = "MD"; reg.StateFileNames[1] = "artAssets/MarylandButton.png";
-            reg.StateNames[2] = "VA"; reg.StateFileNames[2] = "artAssets/WashingtonButton.png";
+            reg.StateNames[2] = "VA"; reg.StateFileNames[2] = "artAssets/VirginiaButton.png";
             reg.StateNames[3] = "WV"; reg.StateFileNames[3] = "artAssets/westVirginaButton.png";
-            reg.StateNames[4] = "NC"; reg.StateFileNames[4] = "artAssets/northCarolinaButton.png";
+            reg.StateNames[4] = "NC"; reg.StateFileNames[4] = "artAssets/northCarolina.png";
             reg.StateNames[5] = "SC"; reg.StateFileNames[5] = "artAssets/southCarolinaButton.png";
             reg.StateNames[6] = "KY"; reg.StateFileNames[6] = "artAssets/kentuckyButton.png";
             reg.StateNames[7] = "TN"; reg.StateFileNames[7] = "artAssets/tennesseeButton.png";
@@ -191,6 +197,8 @@ namespace GettingStarted
 
             reg.filename = "artAssets/south.png";
             reg.StatName = "artAssets/DirtySouthStats.png";
+            reg.superbackbuttonstring = "artAssets/southButton.png";
+            reg.regionColor = System.Windows.Media.Brushes.Firebrick;
 
             reg.ShowDialog();
             this.Close();
@@ -205,6 +213,10 @@ namespace GettingStarted
             reg.StateNames[1] = "HI"; reg.StateFileNames[1] = "artAssets/HawaiiButton.png";
             reg.filename = "artAssets/Alaska.png";
             reg.StatName = "artAssets/pacificStats.png";
+            reg.superbackbuttonstring = "artAssets/AlaskaButton.png";
+
+            reg.regionColor = System.Windows.Media.Brushes.ForestGreen;
+
             reg.ShowDialog();
             this.Close();
         }
