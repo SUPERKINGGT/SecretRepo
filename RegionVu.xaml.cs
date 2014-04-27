@@ -69,6 +69,7 @@ namespace GettingStarted
                     Height = 250
                 };
 
+                //temp information for graphs here
                 string chartName = "";
                 if (StateNames[i] == "NY") { chartName = "artAssets/NewYorkChart.png"; }
                 else if (StateNames[i] == "HI") { chartName = "artAssets/HawaiiChart.png"; }
