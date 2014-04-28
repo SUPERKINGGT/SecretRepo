@@ -9,18 +9,17 @@
     <Grid>
         <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
         <Image x:Name="RegionBackground" HorizontalAlignment="Left" Height="1080" Margin="0,0,0,0" VerticalAlignment="Top" Width="1920" Source="artAssets/CleanPlate.png"/>
-        <Image x:Name="StateImage" HorizontalAlignment="Center" Height="400" Margin="0,0,700,0" VerticalAlignment="Center" Width="400" Source="artAssets/Nevada.png"/>
-        <Image x:Name="ChartImage" HorizontalAlignment="Right" Height="800" Margin="0,0,150,0" VerticalAlignment="Center" Width="750" Source="artAssets/NewYorkChart.png"/>
+        <Image x:Name="ChartImage" HorizontalAlignment="Center" Height="995" Margin="-391,24,-364,30" VerticalAlignment="Center" Width="2667" Source="artAssets/NewYorkChart.png"/>
 
         <k:KinectUserViewer VerticalAlignment="Top" HorizontalAlignment="Center" k:KinectRegion.KinectRegion="{Binding ElementName=kinectRegion}" Height="100" UserColoringMode="Manual" />
-        <k:KinectRegion Name="kinectRegion" Margin="0,-30,0,30">
+        <k:KinectRegion Name="kinectRegion" Margin="-3,-30,3,30">
             <Grid>
                 <k:KinectTileButton Click="HomeOnClick" VerticalAlignment="Top" Margin="10,47,0,0" HorizontalAlignment="Left" Height="255" Width="375" BorderThickness="0">
                     <k:KinectTileButton.Background>
                         <ImageBrush ImageSource="artAssets/HomeButton.png"/>
                     </k:KinectTileButton.Background>
                 </k:KinectTileButton>
-                <k:KinectTileButton x:Name="BackButton" Click="BackOnClick" VerticalAlignment="Bottom" Margin="10,47,0,0" HorizontalAlignment="Left" Height="200" Width="350" BorderThickness="0">
+                <k:KinectTileButton x:Name="BackButton" Click="BackOnClick" VerticalAlignment="Bottom" Margin="1613,0,0,776" HorizontalAlignment="Left" Height="235" Width="278" BorderThickness="0">
                     <k:KinectTileButton.Background>
                         <ImageBrush ImageSource="artAssets/backArrow.png"/>
                     </k:KinectTileButton.Background>
