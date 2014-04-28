@@ -70,13 +70,13 @@ namespace GettingStarted
                 };
 
                 //temp information for graphs here
-                string chartName = "";
-                if (StateNames[i] == "NY") { chartName = "artAssets/NewYorkChart.png"; }
-                else if (StateNames[i] == "HI") { chartName = "artAssets/HawaiiChart.png"; }
-                else if (StateNames[i] == "WA") { chartName = "artAssets/WashingtonChart.png";  }
-                else if (StateNames[i] == "FL") { chartName = "artAssets/Florida.png"; }
-                else if (StateNames[i] == "IL") { chartName = "artAssets/IllinoisChart.png"; }
-                else { chartName = "artAssets/temp.png"; }
+                //string chartName = "";
+                //if (StateNames[i] == "NY") { chartName = "artAssets/NewYorkChart.png"; }
+                //else if (StateNames[i] == "HI") { chartName = "artAssets/HawaiiChart.png"; }
+                //else if (StateNames[i] == "WA") { chartName = "artAssets/WashingtonChart.png";  }
+                //else if (StateNames[i] == "FL") { chartName = "artAssets/Florida.png"; }
+                //else if (StateNames[i] == "IL") { chartName = "artAssets/IllinoisChart.png"; }
+                //else { chartName = "artAssets/temp.png"; }
                 int i1 = i;
                 button.Click +=
                     (o, args) =>
@@ -84,7 +84,8 @@ namespace GettingStarted
                         this.sensorChooser.Stop();
                         StateVu State = new StateVu();
                         State.StateName = StateFileNames[i1];
-                        State.ChartName = chartName;
+                        State.StateInitial = StateNames[i1];
+                        //State.ChartName = chartName;
                         State.whichRegion = filename;
                         State.prevRegionStats = StatName;
                         State.prevNumofStates = numberOfStates;

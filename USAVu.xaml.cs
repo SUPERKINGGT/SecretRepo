@@ -113,7 +113,7 @@ namespace GettingStarted
             reg.StateNames[10] = "MT"; reg.StateFileNames[10] = "artAssets/MontanaButton.png";
 
             reg.filename = "artAssets/WestCoast.png";
-            reg.StatName = "artAssets/WestCoastStats.png";
+            reg.StatName = "artAssets/Charts/WEST.png";
             reg.superbackbuttonstring = "artAssets/WestButton.png";
             reg.regionColor = System.Windows.Media.Brushes.Orange;
 
@@ -141,7 +141,7 @@ namespace GettingStarted
             reg.StateNames[11] = "IA"; reg.StateFileNames[11] = "artAssets/IowaButton.png";
 
             reg.filename = "artAssets/midwest.png";
-            reg.StatName = "artAssets/MidWestStats.png";
+            reg.StatName = "artAssets/Charts/MIDWEST.png";
             reg.superbackbuttonstring = "artAssets/midWestButton.png";
             reg.regionColor = System.Windows.Media.Brushes.Gold;
 
@@ -165,7 +165,7 @@ namespace GettingStarted
             reg.StateNames[8] = "CT"; reg.StateFileNames[8] = "artAssets/ConnecticutButton.png";
 
             reg.filename = "artAssets/EastCoast.png";
-            reg.StatName = "artAssets/NorthEastStats.png";
+            reg.StatName = "artAssets/Charts/NORTHEAST.png";
             reg.superbackbuttonstring = "artAssets/EastCoastButton.png";
             reg.regionColor = System.Windows.Media.Brushes.Indigo;
 
@@ -196,7 +196,7 @@ namespace GettingStarted
             reg.StateNames[15] = "TX"; reg.StateFileNames[15] = "artAssets/texasButton.png";
 
             reg.filename = "artAssets/south.png";
-            reg.StatName = "artAssets/DirtySouthStats.png";
+            reg.StatName = "artAssets/Charts/SOUTH.png";
             reg.superbackbuttonstring = "artAssets/southButton.png";
             reg.regionColor = System.Windows.Media.Brushes.Firebrick;
 
@@ -212,7 +212,7 @@ namespace GettingStarted
             reg.StateNames[0] = "AK"; reg.StateFileNames[0] = "artAssets/AlaskaStateButton.png";
             reg.StateNames[1] = "HI"; reg.StateFileNames[1] = "artAssets/HawaiiButton.png";
             reg.filename = "artAssets/Alaska.png";
-            reg.StatName = "artAssets/pacificStats.png";
+            reg.StatName = "artAssets/Charts/PACIFIC.png";
             reg.superbackbuttonstring = "artAssets/AlaskaButton.png";
 
             reg.regionColor = System.Windows.Media.Brushes.ForestGreen;
@@ -225,7 +225,7 @@ namespace GettingStarted
             //HomeStats
             this.sensorChooser.Stop();
             statistics StatScreen = new statistics();
-            StatScreen.filename = "artAssets/TotalUSAStats.png";
+            StatScreen.filename = "artAssets/Charts/USA.png";
             StatScreen.ShowDialog();
             this.Close();
         }

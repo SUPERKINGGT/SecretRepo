@@ -23,7 +23,7 @@ namespace GettingStarted
     public partial class statistics : Window
     {
         private KinectSensorChooser sensorChooser;
-        public string filename = "artAssets/TotalUSAStats.png";
+        public string filename = "";
 
         public statistics()
         {
@@ -38,7 +38,8 @@ namespace GettingStarted
             this.sensorChooserUi.KinectSensorChooser = this.sensorChooser;
             this.sensorChooser.Start();
 
-            this.RegionBackground.Source = new BitmapImage(new Uri(filename, UriKind.RelativeOrAbsolute));
+            this.RegionBackground.Source = new BitmapImage(new Uri("artAssets/CleanPlate.png", UriKind.RelativeOrAbsolute));
+            this.myChart.Source = new BitmapImage(new Uri(filename, UriKind.RelativeOrAbsolute));
 
         }
 

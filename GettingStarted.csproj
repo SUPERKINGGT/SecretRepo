@@ -262,6 +262,70 @@
   <ItemGroup>
     <Resource Include="artAssets\backgrr.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="USA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\Charts\USA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\Charts\MIDWEST.png" />
+    <Resource Include="artAssets\Charts\NORTHEAST.png" />
+    <Resource Include="artAssets\Charts\PACIFIC.png" />
+    <Resource Include="artAssets\Charts\SOUTH.png" />
+    <Resource Include="artAssets\Charts\WEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="artAssets\Charts\AK.png" />
+    <Resource Include="artAssets\Charts\AL.png" />
+    <Resource Include="artAssets\Charts\AR.png" />
+    <Resource Include="artAssets\Charts\AZ.png" />
+    <Resource Include="artAssets\Charts\CA.png" />
+    <Resource Include="artAssets\Charts\CO.png" />
+    <Resource Include="artAssets\Charts\CT.png" />
+    <Resource Include="artAssets\Charts\DE.png" />
+    <Resource Include="artAssets\Charts\FL.png" />
+    <Resource Include="artAssets\Charts\GA.png" />
+    <Resource Include="artAssets\Charts\HI.png" />
+    <Resource Include="artAssets\Charts\IA.png" />
+    <Resource Include="artAssets\Charts\ID.png" />
+    <Resource Include="artAssets\Charts\IL.png" />
+    <Resource Include="artAssets\Charts\KS.png" />
+    <Resource Include="artAssets\Charts\KY.png" />
+    <Resource Include="artAssets\Charts\LA.png" />
+    <Resource Include="artAssets\Charts\MA.png" />
+    <Resource Include="artAssets\Charts\MD.png" />
+    <Resource Include="artAssets\Charts\ME.png" />
+    <Resource Include="artAssets\Charts\MI.png" />
+    <Resource Include="artAssets\Charts\MN.png" />
+    <Resource Include="artAssets\Charts\MO.png" />
+    <Resource Include="artAssets\Charts\MS.png" />
+    <Resource Include="artAssets\Charts\MT.png" />
+    <Resource Include="artAssets\Charts\NC.png" />
+    <Resource Include="artAssets\Charts\ND.png" />
+    <Resource Include="artAssets\Charts\NE.png" />
+    <Resource Include="artAssets\Charts\NH.png" />
+    <Resource Include="artAssets\Charts\NJ.png" />
+    <Resource Include="artAssets\Charts\NM.png" />
+    <Resource Include="artAssets\Charts\NV.png" />
+    <Resource Include="artAssets\Charts\NY.png" />
+    <Resource Include="artAssets\Charts\OH.png" />
+    <Resource Include="artAssets\Charts\OK.png" />
+    <Resource Include="artAssets\Charts\OR.png" />
+    <Resource Include="artAssets\Charts\PA.png" />
+    <Resource Include="artAssets\Charts\RI.png" />
+    <Resource Include="artAssets\Charts\SC.png" />
+    <Resource Include="artAssets\Charts\SD.png" />
+    <Resource Include="artAssets\Charts\TN.png" />
+    <Resource Include="artAssets\Charts\TX.png" />
+    <Resource Include="artAssets\Charts\UT.png" />
+    <Resource Include="artAssets\Charts\VA.png" />
+    <Resource Include="artAssets\Charts\VT.png" />
+    <Resource Include="artAssets\Charts\WA.png" />
+    <Resource Include="artAssets\Charts\WI.png" />
+    <Resource Include="artAssets\Charts\WV.png" />
+    <Resource Include="artAssets\Charts\WY.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
