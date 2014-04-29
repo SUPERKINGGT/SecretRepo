@@ -10,10 +10,13 @@
     <Grid>
         <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
         <Image x:Name="RegionBackground" HorizontalAlignment="Left" Height="1080" Margin="0,0,0,0" VerticalAlignment="Top" Width="1920" Source="artAssets/CleanPlate.png"/>
+        
         <k:KinectUserViewer VerticalAlignment="Top" HorizontalAlignment="Center" k:KinectRegion.KinectRegion="{Binding ElementName=kinectRegion}" Height="100" UserColoringMode="Manual" />
         <k:KinectRegion Name="kinectRegion" Margin="0,-30,0,30">
             <Grid>
                 <Image x:Name="myChart" HorizontalAlignment="Center" Height="1002" Margin="13,47,17,0" VerticalAlignment="Center" Width="1882" Source="artAssets/Charts/USA.png"/>
+                <Image x:Name="chartkey" HorizontalAlignment="Center" Height="191" Margin="569,67,1043,791" VerticalAlignment="Center" Width="300" Source="artAssets/Charts/key.png"/>
+
                 <k:KinectTileButton Click="HomeOnClick" VerticalAlignment="Top" Margin="10,47,0,0" HorizontalAlignment="Left" Height="255" Width="375" BorderThickness="0">
                     <k:KinectTileButton.Background>
                         <ImageBrush ImageSource="artAssets/HomeButton.png"/>
